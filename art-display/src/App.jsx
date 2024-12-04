@@ -25,6 +25,8 @@ const artList= [
 
 ]
 
+//call ArtDisplay, SearchFilterArea, SearchFilterResultArea, SideBar
+
 function App() {
   const [count, setCount] = useState(0)
 
