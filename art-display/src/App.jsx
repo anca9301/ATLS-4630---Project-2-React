@@ -3,6 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import SideBar from './SideBarComponents/SideBar'
+import SearchFilterResultArea from './searchComponents/SearchFilterResultArea'
+import ArtDisplay from './DisplayComponents/ArtDisplay'
+
 const artList= [
   { id: 0, //id in the API is 34
     image_id: "2238572f-ad2a-110e-0eda-78dc50b8e13d",
@@ -22,16 +26,18 @@ const artList= [
     artist: "Oskar Kokoschka",
     desc: "The sitter for this portrait, Ernest Ebenstein, was a distinguished tailor to the Austrian aristocracy. Ebenstein took an interest in the young Oskar Kokoschka and offered not only to make the artists clothes but also to instruct him in anatomy. In exchange for a fine suit, the tailor commissioned this portrait, which was one of the first mature works Kokoschka ever completed. Shortly after the Art Institute acquired the work in the mid-1950s, the artist visited the museum and recalled Ebenstein as a charming and kind man who taught him more about anatomy than anyone else."
   },
-
 ]
 
-//call ArtDisplay, SearchFilterArea, SearchFilterResultArea, SideBar
+//call ArtDisplay, SearchFilterResultArea, SideBar
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <SideBar/>
+      <SearchFilterResultArea artList={artList}/>
+      <ArtDisplay/>
     </>
   )
 }
