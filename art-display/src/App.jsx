@@ -3,9 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import {SideBar} from './SideBarComponents/SideBar'
-import {SearchFilterResultArea} from './searchComponents/SearchFilterResultArea'
-import {ArtDisplay} from './DisplayComponents/ArtDisplay'
+import SideBar from './SideBarComponents/SideBar'
+import SearchFilterResultArea from './searchComponents/SearchFilterResultArea'
+import ArtDisplay from './DisplayComponents/ArtDisplay'
 
 const artList= [
   { id: 0, //id in the API is 34
@@ -28,7 +28,7 @@ const artList= [
   },
 ]
 
-//call ArtDisplay, SearchFilterArea, SearchFilterResultArea, SideBar
+//call ArtDisplay, SearchFilterResultArea, SideBar
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -36,7 +36,7 @@ export default function App() {
   return (
     <>
       <SideBar/>
-      <SearchFilterResultArea/>
+      <SearchFilterResultArea artList={artList}/>
       <ArtDisplay/>
     </>
   )

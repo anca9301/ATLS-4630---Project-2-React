@@ -1,8 +1,10 @@
 import ArtResultList from './ArtResultList'
-import {SearchFilterArea} from './SearchFilterArea'
+import SearchFilterArea from './SearchFilterArea'
 
 
-export default function SearchFilterResultArea() {
+export default function SearchFilterResultArea({artList}) {
+    const ArtList = artList
+
     return (
         <div>
             <SearchFilterArea/>
