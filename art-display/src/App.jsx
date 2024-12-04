@@ -6,6 +6,7 @@ import './App.css'
 import SideBar from './SideBarComponents/SideBar'
 import SearchFilterResultArea from './searchComponents/SearchFilterResultArea'
 import ArtDisplay from './DisplayComponents/ArtDisplay'
+import SearchFilterArea from './searchComponents/SearchFilterArea'
 
 const artList= [
   { id: 0, //id in the API is 34
@@ -36,6 +37,7 @@ export default function App() {
   return (
     <>
       <SideBar/>
+      <SearchFilterArea artList={artList} />
       <SearchFilterResultArea artList={artList}/>
       <ArtDisplay/>
     </>
