@@ -22,10 +22,10 @@ export default function SearchFilterResultArea({artList}) {
     })
 
     const filteredOrigin = filteredDate.filter((item)=> {
-
+        let filter = filterOrigin.toLowerCase()
+        let origin = item.placeOfOrigin.toLowerCase()
+        return (origin.includes(filter))
     })
-
-    // filter here
 
     return (
         <div>
