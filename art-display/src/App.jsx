@@ -7,6 +7,7 @@ import SideBar from './SideBarComponents/SideBar'
 import SearchFilterResultArea from './searchComponents/SearchFilterResultArea'
 import ArtDisplay from './DisplayComponents/ArtDisplay'
 import { ArtDisplayIndexContext } from './Context/ArtDisplayIndexContext'
+import { FavoriteIndexesContext } from './Context/FavoriteIndexesContext'
 
 const artList= [
   { id: 0, //id in the API is 34
@@ -33,7 +34,7 @@ const artList= [
 
 export default function App() {
   const [artDisplayIndex, setArtDisplayIndex] = useState(0)
-  const [count, setCount] = useState(0)
+  const [favoriteIndexes, setFavoriteIndexes] = useState([])
 
   return (
     <>
@@ -41,7 +42,10 @@ export default function App() {
       <ArtDisplayIndexContext.Provider value = {{artDisplayIndex, setArtDisplayIndex}}>
         <SearchFilterResultArea artList={artList}/>
       </ArtDisplayIndexContext.Provider>
-      <ArtDisplay artData={artList.at(artDisplayIndex)}/>
+
+      <FavoriteIndexesContext.Provider value = {{favoriteIndexes, setFavoriteIndexes}}>
+        <ArtDisplay artData={artList.at(artDisplayIndex)}/>
+      </FavoriteIndexesContext.Provider>
     </>
   )
 }
