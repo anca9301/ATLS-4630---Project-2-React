@@ -3,7 +3,6 @@ import { FavoriteIndexesContext } from "../Context/FavoriteIndexesContext"
 
 export default function ToggleFavStatusButton({artId}) {
     const {favoriteIndexes, setFavoriteIndexes} = useContext(FavoriteIndexesContext)
-    console.log(favoriteIndexes)
 
     function updateFavorites(newIdx) {
         if (favoriteIndexes.includes(newIdx)) {
