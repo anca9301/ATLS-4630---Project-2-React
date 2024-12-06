@@ -6,6 +6,7 @@ import './App.css'
 import SideBar from './SideBarComponents/SideBar'
 import SearchFilterResultArea from './searchComponents/SearchFilterResultArea'
 import ArtDisplay from './DisplayComponents/ArtDisplay'
+import { ArtDisplayIndexContext } from './Context/ArtDisplayIndexContext'
 
 const artList= [
   { id: 0, //id in the API is 34
@@ -31,13 +32,16 @@ const artList= [
 //call ArtDisplay, SearchFilterResultArea, SideBar
 
 export default function App() {
+  const [artDisplayIndex, setArtDisplayIndex] = useState(0)
   const [count, setCount] = useState(0)
 
   return (
     <>
       <SideBar/>
-      <SearchFilterResultArea artList={artList}/>
-      <ArtDisplay/>
+      <ArtDisplayIndexContext.Provider value = {{artDisplayIndex, setArtDisplayIndex}}>
+        <SearchFilterResultArea artList={artList}/>
+      </ArtDisplayIndexContext.Provider>
+      <ArtDisplay artData={artList.at(artDisplayIndex)}/>
     </>
   )
 }
