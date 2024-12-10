@@ -1,4 +1,4 @@
-import useState from 'react'
+import { useState } from 'react'
 
 export default function SearchTitleCheckBox(){
     const [check, setCheck] = useState(false)
@@ -12,7 +12,7 @@ export default function SearchTitleCheckBox(){
                 <input 
                 type="checkbox"
                 checked={check}
-                onchange={change}
+                onChange={change}
                 />
                 Title
             </label>

@@ -1,4 +1,4 @@
-import useState from 'react'
+import { useState } from 'react'
 
 export default function SearchDescCheckbox() {
     const [check, setCheck] = useState(false)
@@ -12,7 +12,7 @@ export default function SearchDescCheckbox() {
                 <input 
                 type="checkbox"
                 checked={check}
-                onchange={change}
+                onChange={change}
                 />
                 Description
             </label>
