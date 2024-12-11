@@ -5,7 +5,9 @@ export default function ArtResultItem({artData}) {
     const {artDisplayIndex, setArtDisplayIndex} = useContext(ArtDisplayIndexContext)
 
     return (
-        <button onClick={(e)=> {setArtDisplayIndex(artData.id)}}>
+        <button 
+        className= {artDisplayIndex == artData.id ? "result-item-selected" : "result-item"}//"result-item"
+        onClick={(e)=> {setArtDisplayIndex(artData.id)}}>
             {artData.title}
         </button>
     )

@@ -5,7 +5,9 @@ export default function ToGeneralSearchButton() {
     const {filterFavorites, setFilterFavorites} = useContext(FilterFavoritesContext)
 
     return (
-        <button onClick={(e)=> setFilterFavorites(false)}>
+        <button 
+        className="general-search-button"
+        onClick={(e)=> setFilterFavorites(false)}>
         </button>
     )
 }

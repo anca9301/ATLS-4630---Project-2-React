@@ -8,8 +8,10 @@ import SearchFilterArea from './SearchFilterArea'
 import { IsCheckContext } from '../Context/IsCheckContext'
 import { SearchTextContext } from '../Context/SearchTextContext'
 
+import './search.css'
 
-export default function SearchFilterResultArea({artList}) {
+
+export default function SearchFilterResultArea({artList, availableOrigins}) {
     const ArtList = artList
 
     //https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/
@@ -36,13 +38,14 @@ export default function SearchFilterResultArea({artList}) {
     })
 
     return (
-        <div>
+        <div
+        className='search-filter-result-area'>
             <SearchTextContext.Provider value = {{ searchText, setSearchText }}>
             <IsCheckContext.Provider value = {{ isCheck, setIsCheck }}>
             <InputStartDateContext.Provider value={{ filterStartDate, setFilterStartDate}}>
             <InputEndDateContext.Provider value={{ filterEndDate, setFilterEndDate}}>
             <InputOriginContext.Provider value={{ filterOrigin, setFilterOrigin}}>
-                <SearchFilterArea/>
+                <SearchFilterArea availableOrigins={availableOrigins}/>
             </InputOriginContext.Provider>
             </InputEndDateContext.Provider>
             </InputStartDateContext.Provider>

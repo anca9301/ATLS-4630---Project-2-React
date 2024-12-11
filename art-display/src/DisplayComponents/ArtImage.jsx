@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-export default function ArtImage() {
+export default function ArtImage({imageID}) {
     const [image, setImage] = useState(null)
     
     //513f71f2-18d3-7d99-25a3-d9d1110bf729
@@ -17,8 +17,8 @@ export default function ArtImage() {
     }, [])
 
     return (
-        <>
-        <img src={image}/>
-        </>
+        <div className="display-image-container">
+        <img className='display-image' src={image}/>
+        </div>
     )
 }

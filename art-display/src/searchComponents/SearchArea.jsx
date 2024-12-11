@@ -6,14 +6,8 @@ import Checkboxes from './Checkboxes'
 
 export default function SearchArea() {
     return (
-        <>
         <div className='searchArea'>
-            <div className='searchBar'>
-            </div>
-            <div className='searchCheckBoxes'>
-                <Checkboxes/>
-            </div>
+            <Checkboxes/>
         </div>
-        </>
     )
 }

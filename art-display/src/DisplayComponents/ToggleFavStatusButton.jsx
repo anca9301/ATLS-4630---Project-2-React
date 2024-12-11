@@ -15,6 +15,7 @@ export default function ToggleFavStatusButton({artId}) {
 
     return (
         <button 
+        className={favoriteIndexes.includes(artId) ? 'unfavorite-button' : 'favorite-button'}
         onClick={(e)=>{updateFavorites(artId)}}>
             { favoriteIndexes.includes(artId) ? 'Unfavorite' : 'Favorite'}
         </button>

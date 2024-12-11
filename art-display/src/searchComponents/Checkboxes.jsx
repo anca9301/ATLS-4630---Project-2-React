@@ -21,12 +21,14 @@ export default function Checkboxes() {
 
     return(
         <>
-        <div>
+        <div
+        className='search-bar'>
             <input type="text" 
             value = {searchText}
             onChange={handleTextChange} />
         </div>
-        <div>
+        <div
+        className='search-checkboxes'>
             <label>
                 <input 
                 type="checkbox"
