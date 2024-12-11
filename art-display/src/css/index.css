@@ -4,16 +4,14 @@
     font-family: sans-serif;
     font-weight:550;
     height: 100vh;
+    min-height: fit-content;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     left: -.5rem;
-    overflow: hidden;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
+    background-color: aqua;
     overscroll-behavior: none;
     touch-action: none;
   }

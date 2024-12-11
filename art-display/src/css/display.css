@@ -2,8 +2,8 @@
     background-color: #e9559a;
     /* flex-grow: 10; */
     width: 65vw;
-    
     padding: 1% 2% 1% 2%;
+    min-height: fit-content;
 }
 
 .display-header, .display-origin-date {
@@ -39,6 +39,7 @@
 }
 
 .display-description {
+    height: fit-content;
     display: flex;
     flex-flow: column nowrap;
 }
