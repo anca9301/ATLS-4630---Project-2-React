@@ -3,7 +3,7 @@ import SearchArea from './SearchArea'
 import OriginDropdown from './OriginDropdown'
 
 
-export default function SearchFilterArea() {
+export default function SearchFilterArea(artList) {
     return (
         <>
         <SearchArea/>
