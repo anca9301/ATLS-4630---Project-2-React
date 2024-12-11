@@ -37,6 +37,36 @@ export default function SearchFilterResultArea({artList, availableOrigins}) {
         return (origin.includes(filter))
     })
 
+    const filteredTitle = filteredOrigin.filter((item)=> {
+        let text = searchText.toLowerCase()
+        let title = item.title.toLowerCase()
+        if (isCheck[0]) {
+            return(title.includes(text))
+        } else {
+            return (title.includes(title))
+        }
+    })
+
+    const filteredArtist = filteredTitle.filter((item)=> {
+        let text = searchText.toLowerCase()
+        let artist = item.title.toLowerCase()
+        if (isCheck[1]) {
+            return(artist.includes(text))
+        } else {
+            return (artist.includes(artist))
+        }
+    })
+
+    const filteredDesc = filteredArtist.filter((item)=> {
+        let text = searchText.toLowerCase()
+        let desc = item.desc.toLowerCase()
+        if (isCheck[2]) {
+            return(desc.includes(text))
+        } else {
+            return (desc.includes(desc))
+        }
+    })
+
     return (
         <div
         className='search-filter-result-area'>
@@ -53,7 +83,7 @@ export default function SearchFilterResultArea({artList, availableOrigins}) {
             </SearchTextContext.Provider>
             
             {/* pass filter results to art result list */}
-            <ArtResultList searchResults={filteredOrigin}/>
+            <ArtResultList searchResults={filteredDesc}/>
         </div>
     )
 }
