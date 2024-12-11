@@ -1,0 +1,83 @@
+.search-filter-result-area {
+    /* flex-grow: 2; */
+    width: 48vw;
+    justify-content: space-around;
+    background-color: #820263;
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+}
+
+input {
+    height: fit-content;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.search-filter-area {
+    background-color: #f0c6e5;
+    display: flex;
+    flex-flow: column;
+    padding: 2.5%;
+    margin: 2.5%;
+    border: #291720 solid .15rem;
+}
+
+.searchArea {
+    display: flex;
+    flex-flow: column;
+}
+
+.search-bar {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.search-checkboxes {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.filter-date-area {
+    height: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.origin-dropdown {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+}
+
+.result-list {
+    background: #f0c6e5;
+    padding: 3% 0% 3% 0%;
+    margin: 2.5%;
+    border: #291720 solid .15rem;
+}
+
+.result-item, .result-item-selected {
+    margin: .75% 5% .75% 5%;
+    width: 90%;
+    border: #291720 solid .15rem;
+    font-weight: bold;
+}
+
+.result-item {
+    background-color: #583515;
+    color: #f0c6e5;
+}
+
+.result-item-selected {
+    background-color: #FB8B24;
+}
+

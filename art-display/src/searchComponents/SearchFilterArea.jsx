@@ -3,12 +3,12 @@ import SearchArea from './SearchArea'
 import OriginDropdown from './OriginDropdown'
 
 
-export default function SearchFilterArea(artList) {
+export default function SearchFilterArea({availableOrigins}) {
     return (
-        <>
+        <div className='search-filter-area'>
         <SearchArea/>
         <FilterDateArea/>
-        <OriginDropdown/>
-        </>
+        <OriginDropdown availableOrigins={availableOrigins}/>
+        </div>
     )
 }

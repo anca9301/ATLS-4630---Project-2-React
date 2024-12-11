@@ -1,0 +1,10 @@
+.application {
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: sans-serif;
+    font-weight:550;
+}
+
+/* div {
+    border: 1px solid red;
+} */

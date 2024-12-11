@@ -1,0 +1,43 @@
+.art-display {
+    background-color: #e9559a;
+    width: 48vw;
+    /* flex-grow: 2; */
+    padding: 1% 2% 1% 2%;
+}
+
+.display-header, .display-origin-date {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.display-title-artist {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0%;
+}
+
+.favorite-button, .unfavorite-button {
+    border: 1px solid black;
+    height: 80%;
+    width: auto;
+}
+
+.display-image-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.display-image {
+    /* margin: 0% 50% 0% 50%; */
+    max-width: 95%;
+    max-height: 95%;
+    border: #291720 solid .15rem;
+}
+
+.display-description {
+    display: flex;
+    flex-flow: column nowrap;
+}
