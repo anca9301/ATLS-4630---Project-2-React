@@ -38,7 +38,7 @@ export default function SearchFilterResultArea({artList}) {
             </InputStartDateContext.Provider>
             
             {/* pass filter results to art result list */}
-            <ArtResultList/>
+            <ArtResultList searchResults={filteredOrigin}/>
         </div>
     )
 }

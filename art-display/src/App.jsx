@@ -6,7 +6,9 @@ import './App.css'
 import SideBar from './SideBarComponents/SideBar'
 import SearchFilterResultArea from './searchComponents/SearchFilterResultArea'
 import ArtDisplay from './DisplayComponents/ArtDisplay'
-import SearchFilterArea from './searchComponents/SearchFilterArea'
+import { ArtDisplayIndexContext } from './Context/ArtDisplayIndexContext'
+import { FavoriteIndexesContext } from './Context/FavoriteIndexesContext'
+import { FilterFavoritesContext } from './Context/FilterFavoritesContext'
 
 const artList= [
   { id: 0, //id in the API is 34
@@ -122,14 +124,26 @@ const artList= [
 //call ArtDisplay, SearchFilterResultArea, SideBar
 
 export default function App() {
-  const [count, setCount] = useState(0)
+  const [artDisplayIndex, setArtDisplayIndex] = useState(0)
+  const [favoriteIndexes, setFavoriteIndexes] = useState([])
+  const [filterFavorites, setFilterFavorites] = useState(false)
+
+  const filteredList = artList.filter(item =>
+    filterFavorites === true ? favoriteIndexes.includes(item.id) : true
+  )
 
   return (
     <>
-      <SideBar/>
-      <SearchFilterArea artList={artList} />
-      <SearchFilterResultArea artList={artList}/>
-      <ArtDisplay/>
+      <FilterFavoritesContext.Provider value = {{filterFavorites, setFilterFavorites}}>
+          <SideBar/>
+          <ArtDisplayIndexContext.Provider value = {{artDisplayIndex, setArtDisplayIndex}}>
+            <SearchFilterResultArea artList={filteredList}/>
+          </ArtDisplayIndexContext.Provider>
+      </FilterFavoritesContext.Provider>
+
+      <FavoriteIndexesContext.Provider value = {{favoriteIndexes, setFavoriteIndexes}}>
+        <ArtDisplay artData={artList.at(artDisplayIndex)}/>
+      </FavoriteIndexesContext.Provider>
     </>
   )
 }
