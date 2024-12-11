@@ -1,11 +1,11 @@
 import useState from 'react'
-//import data from './data.json' //make this file
+import data from '../data.json' //make this file
 
 export default function SearchBar(props) {
     //https://dev.to/salehmubashar/search-bar-in-react-js-545l
     const searchText = props.text
     const checkedArray = props.array
-    //const artArray = data.artList
+    
 
 
     const parseArray = (a, t) =>{
@@ -24,6 +24,7 @@ export default function SearchBar(props) {
                 }
             }
         })
+        //console.log(data)
     }
 
     parseArray(checkedArray, searchText)
