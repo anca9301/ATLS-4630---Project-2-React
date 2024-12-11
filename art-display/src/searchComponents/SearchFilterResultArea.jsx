@@ -5,10 +5,18 @@ import { InputOriginContext } from '../Context/InputOriginContext'
 import { InputStartDateContext } from '../Context/InputStartDateContext'
 import ArtResultList from './ArtResultList'
 import SearchFilterArea from './SearchFilterArea'
+import { IsCheckContext } from '../Context/IsCheckContext'
+import { SearchTextContext } from '../Context/SearchTextContext'
 
 
 export default function SearchFilterResultArea({artList}) {
     const ArtList = artList
+
+    //https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/
+    const [isCheck, setIsCheck] = useState(new Array(3).fill(false)) //length of array is three because 3 boxes
+    const [searchText, setSearchText] = useState("") //for search text bar
+
+    const searchList = 0
 
     const curYear = new Date().getFullYear()
 
@@ -29,6 +37,8 @@ export default function SearchFilterResultArea({artList}) {
 
     return (
         <div>
+            <SearchTextContext.Provider value = {{ searchText, setSearchText }}>
+            <IsCheckContext.Provider value = {{ isCheck, setIsCheck }}>
             <InputStartDateContext.Provider value={{ filterStartDate, setFilterStartDate}}>
             <InputEndDateContext.Provider value={{ filterEndDate, setFilterEndDate}}>
             <InputOriginContext.Provider value={{ filterOrigin, setFilterOrigin}}>
@@ -36,6 +46,8 @@ export default function SearchFilterResultArea({artList}) {
             </InputOriginContext.Provider>
             </InputEndDateContext.Provider>
             </InputStartDateContext.Provider>
+            </IsCheckContext.Provider>
+            </SearchTextContext.Provider>
             
             {/* pass filter results to art result list */}
             <ArtResultList searchResults={filteredOrigin}/>

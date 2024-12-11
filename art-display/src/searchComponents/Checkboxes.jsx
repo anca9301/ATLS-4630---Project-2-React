@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import SearchBar from './SearchBar'
+import { IsCheckContext } from '../Context/IsCheckContext'
+import { SearchTextContext } from '../Context/SearchTextContext'
 
 export default function Checkboxes() {
-    //https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/
-    const [isCheck, setIsCheck] = useState(new Array(3).fill(false)) //length of array is three because 3 boxes
-    const [searchText, setSearchText] = useState("") //for search text bar
-   
+    const {isCheck, setIsCheck} = useContext(IsCheckContext)
+    const {searchText, setSearchText} = useContext(SearchTextContext)
 
     const handleChange = (position) =>{
        const updatedCheckState = isCheck.map((item, index) => 
@@ -19,13 +19,12 @@ export default function Checkboxes() {
         //return(console.log(isCheck))
     }
 
-
-    
-
     return(
         <>
         <div>
-            <input type="text" onChange={handleTextChange} />
+            <input type="text" 
+            value = {searchText}
+            onChange={handleTextChange} />
         </div>
         <div>
             <label>
