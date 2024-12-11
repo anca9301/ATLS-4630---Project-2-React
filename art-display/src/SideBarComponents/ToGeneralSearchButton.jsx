@@ -6,7 +6,7 @@ export default function ToGeneralSearchButton() {
 
     return (
         <button 
-        className="general-search-button"
+        className="sidebar-button"
         onClick={(e)=> setFilterFavorites(false)}>
         </button>
     )

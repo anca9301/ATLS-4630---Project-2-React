@@ -7,14 +7,17 @@
 }
 
 /* add background images */
-.general-search-button {
+.sidebar-button {
     margin: .5rem;
     height: 1.5rem;
     width: 1.5rem;
 }
 
-.filter-favorite-button {
-    margin: .5rem;
-    height: 1.5rem;
-    width: 1.5rem;
+.general-search-image {
+    /* background-color: aqua; */
+    background-image: url(../assets/searchIcon.png);
+}
+
+.filter-favorite-image {
+    background-image: url("../assets/favoriteIcon.png");
 }

@@ -6,7 +6,7 @@ export default function FilterFavButton() {
 
     return (
         <button 
-        className="filter-favorite-button"
+        className="sidebar-button"
         onClick={(e)=> setFilterFavorites(true)}>
         </button>
     )
