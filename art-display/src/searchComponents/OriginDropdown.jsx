@@ -6,7 +6,7 @@ export default function OriginDropdown() {
     const {filterOrigin, setFilterOrigin} = useContext(InputOriginContext)
 
     return (
-        <form>
+        <form className="origin-dropdown">
             <label htmlFor="origin">Place of Origin:</label>
             <select id="origin" name="origin"
             value={filterOrigin}

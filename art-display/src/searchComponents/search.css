@@ -1,0 +1,72 @@
+.search-filter-result-area {
+    flex-grow: 2;
+    justify-content: space-around;
+    /* background-color: black; */
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+}
+
+input {
+    height: fit-content;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.search-filter-area {
+    display: flex;
+    flex-flow: column;
+    padding: 2.5%;
+    margin: 2.5%;
+}
+
+.searchArea {
+    display: flex;
+    flex-flow: column;
+}
+
+.search-bar {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.search-checkboxes {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.filter-date-area {
+    height: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.origin-dropdown {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+}
+
+.result-list {
+    background: black;
+    padding: 3% 0% 3% 0%;
+    margin: 2.5%;
+}
+
+.result-item, .result-item-selected {
+    margin: .75% 5% .75% 5%;
+    width: 90%;
+}
+
+.result-item-selected {
+    background-color: goldenrod;
+}
+

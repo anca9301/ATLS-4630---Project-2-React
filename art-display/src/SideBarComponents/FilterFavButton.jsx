@@ -5,7 +5,9 @@ export default function FilterFavButton() {
     const {filterFavorites, setFilterFavorites} = useContext(FilterFavoritesContext)
 
     return (
-        <button onClick={(e)=> setFilterFavorites(true)}>
+        <button 
+        className="filter-favorite-button"
+        onClick={(e)=> setFilterFavorites(true)}>
         </button>
     )
 }

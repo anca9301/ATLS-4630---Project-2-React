@@ -133,7 +133,7 @@ export default function App() {
   )
 
   return (
-    <>
+    <div className='application'>
       <FilterFavoritesContext.Provider value = {{filterFavorites, setFilterFavorites}}>
           <SideBar/>
           <ArtDisplayIndexContext.Provider value = {{artDisplayIndex, setArtDisplayIndex}}>
@@ -144,6 +144,6 @@ export default function App() {
       <FavoriteIndexesContext.Provider value = {{favoriteIndexes, setFavoriteIndexes}}>
         <ArtDisplay artData={artList.at(artDisplayIndex)}/>
       </FavoriteIndexesContext.Provider>
-    </>
+    </div>
   )
 }

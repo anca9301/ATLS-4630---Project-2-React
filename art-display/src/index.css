@@ -1,0 +1,8 @@
+.application {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div {
+    border: 1px solid red;
+}

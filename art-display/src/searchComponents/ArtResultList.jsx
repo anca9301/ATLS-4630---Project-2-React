@@ -8,7 +8,7 @@ export default function ArtResultList({searchResults}) {
     })
 
     return (
-        <div>
+        <div className="result-list">
             {items}
         </div>
     )
