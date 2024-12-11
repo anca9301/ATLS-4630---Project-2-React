@@ -40,14 +40,40 @@ export default function SearchFilterResultArea({artList, availableOrigins}) {
     const filteredTitle = filteredOrigin.filter((item)=> {
         let text = searchText.toLowerCase()
         let title = item.title.toLowerCase()
+        let artist = item.artist.toLowerCase()
+        let desc = item.desc.toLowerCase()
+        let artTitle = false
+        let artArtist = false
+        let artDesc = false
+        let art = true
+        
         if (isCheck[0]) {
-            return(title.includes(text))
-        } else {
-            return (title.includes(title))
+            if(title.includes(text)){
+                artTitle= title.includes(text)
+                
+            }
+        }if (isCheck[1]) {
+            if(artist.includes(text)){
+                artArtist= artist.includes(text)
+            }
+        }if (isCheck[2]){
+            if(desc.includes(text)){
+                artDesc = desc.includes(text)
+            }
+        }
+        
+        if ((isCheck[0]==false) && (isCheck[1]==false) && (isCheck[2])==false){ //if nothing checked show all
+            return (art)
+        }
+        if ( (artTitle == false) && (artArtist==false) && (artDesc==false) ){ //if the text does not have any results while all boxes are checked nothing shows
+            art = false
+            return (art)
+        }else { //any of the boxes are checked and results exist
+            return (art)
         }
     })
 
-    const filteredArtist = filteredTitle.filter((item)=> {
+    /* const filteredArtist = filteredTitle.filter((item)=> {
         let text = searchText.toLowerCase()
         let artist = item.title.toLowerCase()
         if (isCheck[1]) {
@@ -65,7 +91,7 @@ export default function SearchFilterResultArea({artList, availableOrigins}) {
         } else {
             return (desc.includes(desc))
         }
-    })
+    }) */
 
     return (
         <div
@@ -83,7 +109,7 @@ export default function SearchFilterResultArea({artList, availableOrigins}) {
             </SearchTextContext.Provider>
             
             {/* pass filter results to art result list */}
-            <ArtResultList searchResults={filteredDesc}/>
+            <ArtResultList searchResults={filteredTitle}/>
         </div>
     )
 }
