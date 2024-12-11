@@ -132,12 +132,18 @@ export default function App() {
     filterFavorites === true ? favoriteIndexes.includes(item.id) : true
   )
 
+  const availableOrigins = [""]
+  artList.forEach(item => {
+    if (!availableOrigins.includes(item.placeOfOrigin)) {
+      availableOrigins.push(item.placeOfOrigin)
+  }})
+
   return (
     <div className='application'>
       <FilterFavoritesContext.Provider value = {{filterFavorites, setFilterFavorites}}>
           <SideBar/>
           <ArtDisplayIndexContext.Provider value = {{artDisplayIndex, setArtDisplayIndex}}>
-            <SearchFilterResultArea artList={filteredList}/>
+            <SearchFilterResultArea artList={filteredList} availableOrigins={availableOrigins}/>
           </ArtDisplayIndexContext.Provider>
       </FilterFavoritesContext.Provider>
 

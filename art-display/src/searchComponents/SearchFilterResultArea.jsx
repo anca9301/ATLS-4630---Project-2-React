@@ -11,7 +11,7 @@ import { SearchTextContext } from '../Context/SearchTextContext'
 import './search.css'
 
 
-export default function SearchFilterResultArea({artList}) {
+export default function SearchFilterResultArea({artList, availableOrigins}) {
     const ArtList = artList
 
     //https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/
@@ -45,7 +45,7 @@ export default function SearchFilterResultArea({artList}) {
             <InputStartDateContext.Provider value={{ filterStartDate, setFilterStartDate}}>
             <InputEndDateContext.Provider value={{ filterEndDate, setFilterEndDate}}>
             <InputOriginContext.Provider value={{ filterOrigin, setFilterOrigin}}>
-                <SearchFilterArea/>
+                <SearchFilterArea availableOrigins={availableOrigins}/>
             </InputOriginContext.Provider>
             </InputEndDateContext.Provider>
             </InputStartDateContext.Provider>

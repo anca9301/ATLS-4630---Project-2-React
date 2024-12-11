@@ -1,17 +1,18 @@
 .sidebar {
     display: flex;
     flex-flow: column nowrap;
+    background-color: #291720;
 }
 
 /* add background images */
 .general-search-button {
-    margin: 2px;
-    height: 20px;
-    width: 20px;
+    margin: 5px;
+    height: 18px;
+    width: 18px;
 }
 
 .filter-favorite-button {
-    margin: 2px;
-    height: 20px;
-    width: 20px;
+    margin: 5px;
+    height: 18px;
+    width: 18px;
 }
