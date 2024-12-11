@@ -1,5 +1,6 @@
 .search-filter-result-area {
-    flex-grow: 2;
+    /* flex-grow: 2; */
+    width: 48vw;
     justify-content: space-around;
     background-color: #820263;
 }

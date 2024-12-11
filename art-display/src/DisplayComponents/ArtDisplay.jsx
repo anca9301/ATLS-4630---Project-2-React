@@ -14,10 +14,16 @@ export default function ArtDisplay({artData}) {
             <ArtHeader 
             artId={artData.id} 
             title={artData.title}
-            author={artData.author}/>
-            <ArtImage/>
-            <ArtOriginDate/>
-            <ArtDescription/>
+            artist={artData.artist}/>
+            <ArtImage
+            imageID={artData.image_id}
+            />
+            <ArtOriginDate
+            origin={artData.placeOfOrigin}
+            dateStart={artData.dateStart}
+            dateEnd={artData.dateEnd}/>
+            <ArtDescription
+            desc={artData.desc}/>
         </div>
     )
 }
