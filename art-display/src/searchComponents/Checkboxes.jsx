@@ -54,7 +54,6 @@ export default function Checkboxes() {
                 Description
             </label>
         </div>
-        <SearchBar text={searchText} array={isCheck}/>
         </>
     )
 }
