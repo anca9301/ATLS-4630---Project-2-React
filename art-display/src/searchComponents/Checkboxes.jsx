@@ -22,22 +22,24 @@ export default function Checkboxes() {
     return(
         <>
         <div
-        className='search-bar'>
-            <input type="text" 
+        className='search-bar-container'>
+            <input 
+            className='search-bar'
+            type="text" 
             value = {searchText}
             onChange={handleTextChange} />
         </div>
         <div
         className='search-checkboxes'>
-            <label>
-                <input 
+            <label className='spacing'>
+                <input
                 type="checkbox"
                 checked={isCheck[0]}
                 onChange={() => handleChange(0)}
                 />
                Title
             </label>
-            <label>
+            <label className='spacing'>
             <input 
                 type="checkbox"
                 checked={isCheck[1]}

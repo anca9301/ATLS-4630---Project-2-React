@@ -44,7 +44,7 @@ export default function SearchBar(props) {
                 }
             }
         })
-        //console.log(data[1].title)
+        // console.log(data[1].title)
     }
 
     parseArray(checkedArray, searchText)

@@ -8,7 +8,7 @@ export default function inputStartDate() {
     return (
         <input 
         type="number"
-        className="input-date"
+        className="input-date spacing"
         min= {0}
         max={curYear}
         value={filterStartDate}
