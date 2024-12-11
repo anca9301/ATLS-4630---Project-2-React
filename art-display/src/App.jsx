@@ -118,6 +118,106 @@ const artList= [
     title: "Suit",
     artist: "Lorna Simpson",
     desc: 'In Suit, Lorna Simpson examines gender representation and the implications of fashion by presenting a woman in masculine clothing. In speaking of this work, the artist has stated: “I like using the figure of the black woman to talk about many different things, including men. I don’t have to have a man in the picture to suggest that these figures are both male and female. I’m hoping to stretch the viewer’s perceptions beyond thoughts of race and gender.”'
+  },
+  {
+    id: 11, //42845
+    image_id: "e8fc1a78-2f80-b9dc-2a9d-05896eb5f621",
+    dateStart: 1987,
+    dateEnd: 1987,
+    placeOfOrigin: "United States",
+    title: "Breeze at Work",
+    artist: "Sandy Skoglund",
+    desc: "Silver dye-bleach print"
+  },
+  {
+    id: 12, //34969
+    image_id: "374a8fac-7071-785b-f8a4-5c440a6eff7d",
+    dateStart: 1801,
+    dateEnd: 1834,
+    placeOfOrigin: "Japan",
+    title: "Women and Med by the Bento Shop",
+    artist: "Totoya Hokkei",
+    desc: "Color woodblock print; surimono"
+  },
+  {
+    id: 13, //40903
+    image_id: "ab9ee648-c086-8889-68e7-5de2bdf40336",
+    dateStart: 1805,
+    dateEnd: 1851,
+    placeOfOrigin: "England",
+    title: "Fox Hunt",
+    artist: "Henry Alken",
+    desc: "Watercolor, over graphite, heightened with traces of white gouache, on cream wove paper, laid down on gray wove paper",
+  },
+  {
+    id: 14, //36198
+    image_id: "6626544f-2c5f-d1ad-11c7-87982a58d097",
+    dateStart: 1900,
+    dateEnd: 1900,
+    placeOfOrigin: "Spain",
+    title: "Young Women with a Hat",
+    artist: "Pablo Picasso",
+    desc: "The subject of this portrait is likely Germaine Gargallo (1880–1948). When she refused the marriage proposal of Picasso’s friend and roommate, Carles Casagemas (1880–1901), tragedy followed. In a drunken rage, Casagemas shot Gargallo in the head (grazing her temple), and then turned the gun on himself. His death and Picasso’s resulting grief led, in part, to the artist’s Blue Period, which explored themes of despair and isolation."
+  },
+  {
+    id: 15, //117694
+    image_id: "5755d02e-5bf8-6b9e-6148-76d3067e61e4",
+    dateStart: 1935,
+    dateEnd: 1935,
+    placeOfOrigin: "Spain",
+    title: "Minotaur and Wounded Horse",
+    artist: "Pablo Picasso",
+    desc: "Pen and brush and black inks, graphite, and colored crayons, with smudging, over incising, on cream laid paper"
+  },
+  {
+    id: 16, //85586
+    image_id: "9fa3f68a-d303-eb92-f44e-850477566432",
+    dateStart: 1000,
+    dateEnd: 1476,
+    placeOfOrigin: "Peru",
+    title: "Work Basket",
+    artist: "Chancay",
+    desc: "In central and southern coastal Peru, archaeologists have unearthed a variety of weaving tools and work baskets. These are often found in women’s burials, which suggests that spinning yarn and weaving textiles were the domain of women. This basket was probably made for a weaver to hold tools used in making textiles, such as needle cases, needles, spindles, and combs."
+  },
+  {
+    id: 17, //105466
+    image_id: "9bc9134c-6b57-80be-c118-566667a615ae",
+    dateStart: 1603,
+    dateEnd: 1613,
+    placeOfOrigin: "Netherlands",
+    title: "The Battle between the Gods and the Giants",
+    artist: " Joachim Antonisz. Wtewael",
+    desc: "The subject of the victory of the gods of Olympus over the ancient race of giants provided Joachim Wtewael with the opportunity to depict exaggerated athletic poses and striking contrasts of space and light. From the clouds, the Olympian gods wield their attributes as weapons: Jupiter hurls thunderbolts; Neptune brandishes his triton; and Mercury uses his caduceus as a spear. The helmeted figure on the right is Minerva, the goddess of wisdom and war. The painting's gemlike effect results from the use of a copper support and from its small scale. The artist's self-conscious display of his skills was a hallmark of the international style known as Mannerism, which was fashionable in Holland around 1600."
+  },
+  {
+    id: 18, //248314,
+    image_id: "b6160e9c-2585-257b-30f7-606440cb91e0",
+    dateStart: 2011,
+    dateEnd: 2011,
+    placeOfOrigin: "Spain",
+    title: "Veiled Shadow XXVIII",
+    artist: "Jaume Plensa",
+    desc: "Black paint, over clear acrylic gel medium, over ink jet print on recto and verso of white wove paper"
+  },
+  {
+    id: 19, //110872
+    image_id: "e8344810-288f-ea60-6264-d7c785ffc097",
+    dateStart: 1525,
+    dateEnd: 1565,
+    placeOfOrigin: "Italy",
+    title: "Portrait of a Lady",
+    artist: "Titian",
+    desc: "Oil on canvas"
+  },
+  {
+    id: 20, //222816,
+    image_id: "465cc832-eafb-340f-6504-de4ef9005644",
+    dateStart: 2006,
+    dateEnd: 2006,
+    placeOfOrigin: "India",
+    title: "Changing Skin",
+    artist: "Anju Dodiya",
+    desc: "Watercolor and charcoal with stumping and smudging, over graphite, on cream wove paper"
   }
 ]
 
