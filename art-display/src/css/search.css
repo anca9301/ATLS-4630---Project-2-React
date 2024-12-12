@@ -4,6 +4,7 @@
     width: 45vw;
     justify-content: space-around;
     background-color: #820263;
+    min-height: fit-content;
 }
 
 button {
