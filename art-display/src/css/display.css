@@ -1,8 +1,7 @@
 .art-display {
     background-color: #e9559a;
-    /* flex-grow: 10; */
     width: 65vw;
-    padding: 1% 2% 1% 2%;
+    padding: 2rem 10% 2rem 10%;
     min-height: fit-content;
 }
 
@@ -18,29 +17,59 @@
     margin: 0%;
 }
 
+.display-title {
+    font-size:x-large;
+    font-weight: bolder;
+}
+
+.display-artist {
+    font-size: large;
+    font-weight: bold;
+}
+
 .display-image-container {
-    width: 100%;
+    background-color: #56213c;
+    border: #291720 solid .15rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    margin: 1rem 0 1rem 0;
 }
 
 .display-image {
-    /* margin: 0% 50% 0% 50%; */
-    max-width: 95%;
-    max-height: 50vh;
+    min-width: 75%;
+    max-width: 100%;
+    height: auto;
     border: #291720 solid .15rem;
 }
 
-.display-description {
+.display-origin-date {
+    border: #291720 solid .15rem;
+    background-color: #f7c2da;
+    padding: .5rem;
+}
+
+.display-description-container {
+    margin-top: .75rem;
     height: fit-content;
     display: flex;
     flex-flow: column nowrap;
 }
 
+.display-description-title, .display-origin-date {
+    font-size:large;
+    font-weight: bold;
+}
+
+.display-description {
+    margin-top: .5rem;
+    font-size: medium;
+}
+
 .favorite-button {
-    height: 4rem;
-    width: 4rem;
+    justify-self: center;
+    height: 3rem;
+    width: auto;
     border-radius: 10%;
     background-color: rgba(255, 255, 255, 0);
 }
