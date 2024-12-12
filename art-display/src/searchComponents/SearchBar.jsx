@@ -22,8 +22,11 @@ export default function SearchBar(props) {
                         
                         if (data[i].title.toLowerCase().includes(t)){
                             //add to array
+                            //console.log(object.title)
+                            return(object)
                             
                         }
+                        
                     })
                 } else if(index==1){
                     //ar = "artist"
