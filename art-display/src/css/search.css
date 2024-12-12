@@ -88,6 +88,10 @@ p {
     color: #f0c6e5;
 }
 
+.result-item:hover {
+    background-color: #965417;
+}
+
 .result-item-selected {
     background-color: #FB8B24;
 }

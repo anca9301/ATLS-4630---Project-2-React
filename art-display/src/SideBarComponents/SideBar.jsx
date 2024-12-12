@@ -8,7 +8,6 @@ export default function SideBar() {
         <div className="sidebar">
             <ToGeneralSearchButton/>
             <FilterFavButton/>
-            <div className="sidebar-button general-search-image"></div>
         </div>
     )
 }

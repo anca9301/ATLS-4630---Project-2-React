@@ -1,13 +1,17 @@
 import { useContext } from "react"
 import { FilterFavoritesContext } from '../Context/FilterFavoritesContext'
 
+import searchIcon from '../assets/searchIcon.png'
+
 export default function ToGeneralSearchButton() {
     const {filterFavorites, setFilterFavorites} = useContext(FilterFavoritesContext)
 
     return (
-        <button 
+        <img
         className="sidebar-button"
-        onClick={(e)=> setFilterFavorites(false)}>
-        </button>
+        src={searchIcon}
+        alt="search icon"
+        onClick={(e)=> setFilterFavorites(false)}
+        />
     )
 }
