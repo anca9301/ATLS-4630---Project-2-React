@@ -8,7 +8,7 @@ import SearchFilterArea from './SearchFilterArea'
 import { IsCheckContext } from '../Context/IsCheckContext'
 import { SearchTextContext } from '../Context/SearchTextContext'
 
-import './search.css'
+import '../css/search.css'
 
 
 export default function SearchFilterResultArea({artList, availableOrigins}) {

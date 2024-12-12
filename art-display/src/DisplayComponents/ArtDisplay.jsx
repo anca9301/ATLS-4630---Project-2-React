@@ -2,7 +2,7 @@ import ArtHeader from './ArtHeader'
 import ArtImage from './ArtImage'
 import ArtOriginDate from './ArtOriginDate'
 import ArtDescription from './ArtDescription'
-import './display.css'
+import '../css/display.css'
 
 export default function ArtDisplay({artData}) {
 

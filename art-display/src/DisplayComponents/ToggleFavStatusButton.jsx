@@ -1,6 +1,9 @@
 import { useContext } from "react"
 import { FavoriteIndexesContext } from "../Context/FavoriteIndexesContext"
 
+import favoriteIcon from '../assets/favoriteIcon.png'
+import unfavoriteIcon from '../assets/unfavoriteIcon.png'
+
 export default function ToggleFavStatusButton({artId}) {
     const {favoriteIndexes, setFavoriteIndexes} = useContext(FavoriteIndexesContext)
 
@@ -14,10 +17,11 @@ export default function ToggleFavStatusButton({artId}) {
     }
 
     return (
-        <button 
-        className={favoriteIndexes.includes(artId) ? 'unfavorite-button' : 'favorite-button'}
-        onClick={(e)=>{updateFavorites(artId)}}>
-            { favoriteIndexes.includes(artId) ? 'Unfavorite' : 'Favorite'}
-        </button>
+        <img
+        className='favorite-button'
+        src = {favoriteIndexes.includes(artId) ? favoriteIcon : unfavoriteIcon}
+        alt="favorite status"
+        onClick={(e)=>{updateFavorites(artId)}}
+        />
     )
 }

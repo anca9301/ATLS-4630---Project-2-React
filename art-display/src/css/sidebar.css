@@ -1,0 +1,30 @@
+.sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #291720;
+    width: fit-content;
+    padding-top: .5rem;
+}
+
+/* add background images */
+.sidebar-button {
+    margin: .5rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+}
+
+.sidebar-button:hover {
+    background-color: #f190bd;
+  }
+
+.general-search-image {
+    /* background-color: aqua; */
+    background: url('./../assets/searchIcon.png') no-repeat;
+}
+
+.filter-favorite-image {
+    background: url('./../assets/favoriteIcon.png') no-repeat;
+}

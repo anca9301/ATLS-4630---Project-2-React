@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './css/App.css'
 
 import SideBar from './SideBarComponents/SideBar'
 import SearchFilterResultArea from './searchComponents/SearchFilterResultArea'
@@ -222,6 +222,8 @@ const artList= [
 ]
 
 //call ArtDisplay, SearchFilterResultArea, SideBar
+
+const artList = data
 
 export default function App() {
   const [artDisplayIndex, setArtDisplayIndex] = useState(0)
